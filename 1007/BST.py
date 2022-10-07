@@ -34,9 +34,9 @@ class BST:
 
     def postorder(self):
         if self.left:
-            self.left.preorder()
+            self.left.postorder()
         if self.right: 
-            self.right.preorder()
+            self.right.postorder()
         print(self.key, end = " ")
 
 myBST = BST(3, BST(1), BST(5))
